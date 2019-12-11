@@ -1,14 +1,13 @@
-body {
-  font-family: sans-serif;
-}
-body {
-  font-family: sans-serif;
-}
+@import "range.css";
+@import "bg.css";
+@import "title.css";
+@import "button.css";
+@import "textLine.css";
+@import "winBtn.css";
 
-#js-text {
-  width: 50px;
-}
-
-.scale {
+.frame {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

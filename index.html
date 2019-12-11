@@ -7,21 +7,59 @@
   </head>
 
   <body>
-    <h1>Random Number Game</h1>
-    <div class="scale">
-      <h2>Generate a number between 0 and&nbsp;</h2>
-      <h2 id="js-scale"></h2>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
+      <div class="snowflake">❄</div>
     </div>
-    <form id="js-form">
-      <input type="range" id="js-range" min="0" max="200" value="10" step="5" />
-    </form>
-    <div class="playBox">
-      <span>Guess the number :</span>
-      <input type="text" id="js-text" />
-      <button id="js-playBtn">Play!</button>
+    <div class="frame">
+      <h1>If you win gambling, I'll give you freedom on Christmas day</h1>
+      <div class="scale">
+        <h2>
+          Generate a number between
+          <a style="font-size: 150px;">0</a> and&nbsp;<span id="js-spanScale"
+            >10</span
+          >
+        </h2>
+        <h2 id="js-scale"></h2>
+      </div>
+      <form id="js-form">
+        <input
+          type="range"
+          id="js-range"
+          min="0"
+          max="200"
+          value="0"
+          step="5"
+        />
+      </form>
+      <div class="playBox">
+        <div class="guess">
+          <span>Guess :</span>
+        </div>
+        <input type="text" id="js-text" />
+        <button id="js-playBtn">Play!</button>
+      </div>
+      <h2 id="js-scoring"></h2>
+      <h2 id="js-result"></h2>
+      <script src="src/index.js"></script>
     </div>
-    <h2 id="js-scoring"></h2>
-    <h2 id="js-result"></h2>
-    <script src="src/index.js"></script>
   </body>
 </html>

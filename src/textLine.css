@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+.scale {
+  display: flex;
+}
+
+.playBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+
+.playBox .guess {
+  background: rgba(240, 120, 100, 0);
+  color: #1aab8a;
+  border: none;
+  font-weight: bold;
+  position: relative;
+  height: 60px;
+  font-size: 40px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  font-family: "Mountains of Christmas", cursive;
+  padding-right: 10px;
+}
+
+#js-text {
+  border: none;
+  font-weight: bold;
+  border-bottom: 3px solid #1aab8a;
+  font-size: 40px;
+  background: none;
+  height: 100%;
+  width: 100px;
+  color: #1aab8a;
+  margin-right: 20px;
+  font-family: "Mountains of Christmas", cursive;
+}

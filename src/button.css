@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+
+#js-playBtn {
+  background: rgba(240, 120, 100, 0);
+  color: #1aab8a;
+  border: none;
+  font-weight: bold;
+  position: relative;
+  height: 60px;
+  font-size: 40px;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  font-family: "Mountains of Christmas", cursive;
+}
+#js-playBtn:hover {
+  background: red;
+  color: #1aab8a;
+}
+#js-playBtn:before,
+#js-playBtn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+#js-playBtn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#js-playBtn:hover:before,
+#js-playBtn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

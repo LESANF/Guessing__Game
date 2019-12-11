@@ -8,26 +8,29 @@ const scale = document.querySelector("#js-scale"),
   text = document.querySelector("#js-text"),
   scoring = document.querySelector("#js-scoring"),
   result = document.querySelector("#js-result"),
-  button = document.querySelector("#js-playBtn");
+  button = document.querySelector("#js-playBtn"),
+  span = document.querySelector("#js-spanScale");
+
+const WIN = "win";
 
 let number = "";
 let ranNumScale = "";
+span.innerHTML = `<span style="font-size:120px;">${range.value}</span>`;
 
-function init() {
-  range.addEventListener("input", e => {
-    const rangeValue = e.target.value;
-    ranNumScale = rangeValue;
-    scale.innerText = `${rangeValue}`;
-  });
-}
+range.addEventListener("input", e => {
+  const rangeValue = e.target.value;
+  ranNumScale = rangeValue;
+  span.innerHTML = `<span style="font-size:120px;">${rangeValue}</span>`;
+});
+
 button.addEventListener("click", () => {
   let ranNum = Math.floor(Math.random() * ranNumScale);
-  console.log(ranNum);
   scoring.innerText = `You chose: ${number}, Machine chose: ${ranNum}`;
 
   if (ranNum !== parseInt(number)) {
     result.innerText = `You lost!`;
   } else {
+    result.classList.add(WIN);
     result.innerText = `You Win`;
   }
 });
@@ -36,5 +39,3 @@ text.addEventListener("input", e => {
   const guessNum = e.target.value;
   number = guessNum;
 });
-
-init();
