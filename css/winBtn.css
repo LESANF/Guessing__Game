@@ -2,13 +2,9 @@
   background-color: salmon;
 }
 
-/* toggle class bg-animate-color */
-
 .bg-animate-color {
   animation: random-bg 0.5s linear infinite;
 }
-
-/* add animation to bg color  */
 
 @keyframes random-bg {
   from {
