@@ -4,6 +4,10 @@
 ![issue badge](https://img.shields.io/badge/language-CSS-informational.svg)
 ![issue badge](https://img.shields.io/badge/language-JS-yellow.svg)
 
+## Link
+
+https://lesanf.github.io/Guessing__Game/
+
 ## Conditions for Challenges
 
 ✅ Find a  random number on a range between 0 and a number defined by the user.    
