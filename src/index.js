@@ -28,6 +28,7 @@ button.addEventListener("click", () => {
   scoring.innerText = `You chose: ${number}, Machine chose: ${ranNum}`;
 
   if (ranNum !== parseInt(number)) {
+    result.classList.remove(WIN);
     result.innerText = `You lost!`;
   } else {
     result.classList.add(WIN);
